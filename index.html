@@ -1,18 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <title>Mi página</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Portfolio de Informática</title>
+          <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                 }
+                 header {
+                    background-color: #4a0e83;
+                    color: white;
+                    text-align: center;
+                     padding: 1rem;
+                     }
+                     nav {
+                          background-color: #eee0ff;
+                          text-align: center;
+                          padding: 0.5rem;
+                          }
+                          nav a {
+                             margin: 0 1rem;
+                             color: #4a0e83;
+                             text-decoration: none;
+                              font-weight: bold;
+                               }
+                               .contenido {
+                                 display: flex;
+                                 padding: 1rem;
+                                 }
+                                 .menu {
+                                    width: 25%;
+                                     background-color: #f2d8ff;
+                                      padding: 1rem;
+                                      }
+                                       .menu h3 {
+                                         color: #800080;
+                                         }
+                                         .menu ol {
+                                             padding-left: 1.2rem;
+                                             }
+                                             .principal {
+                                                flex-grow: 1;
+                                                padding: 1rem;
+                                                 }
+                                                 .seccion {
+                                                    background-color: #fff;
+                                                    border-radius: 10px;
+                                                    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                                                     margin-bottom: 1rem;
+                                                     padding: 1rem;
+                                                     }
+                                                     .herramientas {
+                                                        text-align: center;
+                                                        }
+                                                        .herramientas img {
+                                                            height: 50px;
+                                                            margin: 0.5rem;
+                                                            }
+                                                             footer {
+                                                                background-color: #4a0e83;
+                                                                 color: white;
+                                                                 text-align: center;
+                                                                 padding: 1rem;
+                                                                 }
+                                                                 footer a {
+                                                                    color: white;
+                                                                    text-decoration: none;
+                                                                    }
+                                                                    </style>
     </head>
-    <body>
-    </a>
-        <h1>BIENVENIDOS</h1>
-        <P>Soy Valentina Di Leva y soy alumna. Estoy apreniendo a programar.</P>
+</html>
+<header>
+    <h1>Portfolio de Informática</h1>
+    <p>Primeros pasos en diseño web</p>
+</header>
+<nav>
+    <a href="https://github.com/ValentinaDileva/Taller">Repositorio GitHub</a>
+    <a href="https://drive.google.com/drive/u/0/folders/1dIuULa0uMqRyG6gP0srOaSISF2kPOLV2">Carpeta en Drive</a>
+    <a href="#">FreeCodeCamp</a>
+    <a href="#">MDN Web Docs</a>
+</nav>
+<div class="contenido">
+    <div class="menu">
+        <h3>Ejercicios realizados:</h3>
+        <ol>
+            <li> <a href="./Enlace.html"</li>Receta</a></li>
+             <li><a href="./TABLASEN.html"<a href="./TABLAS2.html"</li>Tabla</a></li>
+             <li><a href="./semantica.html"<a href="./semantica_estilo.css"</li>Mafalda</a></li>
+        </ol>
+    </div>
+     <div class="principal">
+        <div class="seccion">
+            <h3>Sobre mí:</h3>
+            <p>
+                 Hola, mi nombre es <strong>Valentina Di Leva</strong>, y soy estudiante de <strong>3° Año</strong> en el <strong>Colegio Calasanz</strong> y estoy aprendiendo a crear páginas web con CSS y HTML.
+            </p>
+        </div>
+     <div class="seccion">
+        <h3>Lo que aprendí hasta ahora:</h3>
         <ul>
-            <li> <a href="./Enlace.html">Ejercicio1</a></li>
-            <li><a href="./TABLASEN.html">Ejercicio2</a></li>
-            <li><a href="./TABLAS2.html">Ejercicio3</a></li>
-            <li><a href="./semantica.html">Ejercicio4</a></li>
+            <li>Crear estructuras HTML básicas</li>
+             <li>Insertar imágenes, enlaces y tablas</li>
+             <li>Usar etiquetas semánticas correctamente</li>
+              <li>Aplicar estilos usando CSS externo</li>
         </ul>
-        <img src="./imagen.jpg">
-    </body>
+     </div>
+     <div class="seccion herramientas">
+         <h3>Herramientas que estoy usando:</h3>
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" alt="Chrome">
+     </div>
+     </div>
+</div>
+<footer>
+    <p>&copy; 2025 Valentina Di Leva - Informática</p>
+    <a href="#">Contacto</a>
+</footer>
+</body>
 </html>
