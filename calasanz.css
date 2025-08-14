@@ -8,4 +8,9 @@ h2 {
 .oscuro {
     background-color: black;
     color: white;
+} 
+/*selector Id*/
+#biografia{
+    background-color: rgb(230, 20, 20);
+    color:black
 }
