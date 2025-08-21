@@ -1,8 +1,15 @@
-h1 {
-    color: red;
+  header {
+    background-image: url("./AZUL.webp");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 3rem 1rem; "Piedad y letras para transformar el mundo"
+  }
+  h1 {
+    color: rgb(70, 77, 116);
 }
 h2 {
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 /*selector de clase*/
 .oscuro {
@@ -11,6 +18,17 @@ h2 {
 } 
 /*selector Id*/
 #biografia{
-    background-color: rgb(230, 20, 20);
-    color:black
+    background-color: rgb(70, 77, 116);
 }
+main {color:black
+}
+footer a {
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin: 0 0.5rem; 
+  font-size: 1.8rem; 
+  display: inline-block; 
+}
+  footer a:hover {
+    color: gold;
+  }
