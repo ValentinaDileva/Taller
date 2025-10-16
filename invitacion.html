@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Asistencia</title>
+</head>
+<body>
+    <h2>Ejercicio 1: Confirmar asistencia a la fiesta</h2>
+
+    <label>Nombre: <input type="text" id="nombre"></label><br><br>
+
+    <label><input type="radio" name="asistencia" value="si"> Sí</label>
+    <label><input type="radio" name="asistencia" value="no"> No</label><br><br>
+
+    <button onclick="confirmar()">Confirmar</button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        function confirmar() {
+            const nombre = document.getElementById("nombre").value;
+            const asistencia = document.querySelector('input[name="asistencia"]:checked');
+            const mensaje = document.getElementById("mensaje");
+
+            if (!nombre || !asistencia) {
+                mensaje.textContent = "Por favor, completá todos los espacios.";
+                return;
+            }
+
+            if (asistencia.value === "si") {
+                mensaje.textContent = "¡Gracias por confirmar, " + nombre + "! Nos vemos en la fiesta.";
+            } else {
+                mensaje.textContent = "¡Qué pena, " + nombre + "! Te vamos a extrañar.";
+            }
+        }
+    </script>
+</body>
+</html>

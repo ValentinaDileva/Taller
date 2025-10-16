@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Estudiante</title>
+</head>
+<body>
+  <h2>Formulario de Estudiante</h2>
+
+  <label for="nombre">Nombre:</label><br />
+  <input type="text" id="nombre" /><br /><br />
+
+  <label for="apellido">Apellido:</label><br />
+  <input type="text" id="apellido" /><br /><br />
+
+  <label for="curso">Curso:</label><br />
+  <input type="text" id="curso" /><br /><br />
+
+  <button onclick="mostrarBienvenida()">Enviar</button>
+
+  <div id="saludo" style="margin-top:20px; font-weight: bold;"></div>
+
+  <script>
+    function mostrarBienvenida() {
+      const nombre = document.getElementById('nombre').value.trim();
+      const apellido = document.getElementById('apellido').value.trim();
+      const curso = document.getElementById('curso').value.trim();
+
+      if (!nombre || !apellido || !curso) {
+        alert('Por favor, completa todos los campos.');
+        return;
+      }
+
+      const saludoDiv = document.getElementById('saludo');
+      saludoDiv.innerHTML = `¡Bienvenido/a, ${nombre} ${apellido}!<br>Te has registrado en el curso: <strong>${curso}</strong>.`;
+    }
+  </script>
+</body>
+</html>
