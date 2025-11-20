@@ -1,14 +1,23 @@
 function calcularPromedio() {
-    const nota1 = prompt("Ingresa la primer nota:");
-    const nota2 = prompt("Ingresa la segunda nota:");
-    const nota3 = prompt("Ingresa la tercera nota:");
+    const resultado = document.getElementById("resultado");
 
-    nota1 = Number(nota1);
-    nota2 = Number(nota2);
-    nota3 = Number(nota3);
+    const nota1 = Number(prompt("Ingresa la primera nota:"));
+    const nota2 = Number(prompt("Ingresa la segunda nota:"));
+    const nota3 = Number(prompt("Ingresa la tercera nota:"));
 
-    if (!isNaN(nota1) && !isNaN(nota2) && !isNaN(nota3)) {
-        let suma = nota1 + nota2 + nota3;
-        alert("La suma de " + nota1 + "+" + nota2 + "es:" + suma);
+    if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+        resultado.textContent = "Por favor, ingresa solo números válidos.";
+        resultado.style.color = "orange";
+        return;
     }
+
+    const promedio = (nota1 + nota2 + nota3) / 3;
+
+    if (promedio >= 6) {
+        resultado.textContent = `Aprobado con promedio de ${promedio.toFixed(2)}`;
+        resultado.style.color = "green";
+    } else {
+        resultado.textContent = `Desaprobado con promedio de ${promedio.toFixed(2)}`;
+        resultado.style.color = "red";
     }
+}
